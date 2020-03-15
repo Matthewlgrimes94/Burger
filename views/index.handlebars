@@ -1,0 +1,18 @@
+<h1>Burgers!</h1>
+
+<ul id="burgers">
+    {{#each burgers}}
+    {{#unless eaten}}
+        <li>{{burgers.name}}</li>
+    {{/unless}}
+    {{/each}}
+</ul>
+<button id="eatBurger">Eat Da Burger!</button>
+
+<ulid="eaten">
+    {{#each burgers}}
+    {{#if eaten}}
+        <li>{{burgers.name}}</li>
+    {{/if}}
+    {{/each}}
+</ul>
